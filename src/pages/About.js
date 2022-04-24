@@ -3,7 +3,7 @@ function About(){
 let [mes,setMes]=useState("");
    async function getdatalara(){
 
-    var resp=await fetch("http://localhost/rectapi/api/demo/laravel");
+    var resp=await fetch("http://localhost/rectapi/api/demo");
 var data =await resp.json();
 setMes(data.msg);
     }
